@@ -1,0 +1,96 @@
+/* Draft Page Styling */
+
+/* General Page Container */
+.draft-page-container {
+    background-color: #fafafa; /* Light background for the page */
+    color: #333; /* Dark text for readability */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .draft-page-container h1 {
+    font-size: 2.5rem;
+    color: #8e24aa; /* Purple color for title */
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Draft Styling */
+  .draft {
+    background-color: #ffffff; /* White background for the draft */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 30px;
+  }
+  
+  /* Draft Title Styling */
+  .draft h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  /* Draft Content Styling */
+  .draft p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  .draft button {
+    background-color: #8e24aa; /* Purple background for the buttons */
+    color: white; /* White text on button */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .draft button:hover {
+    background-color: #6a1b9a; /* Darker purple on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .draft button:active {
+    transform: translateY(2px); /* Button pushed down effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .draft-page-container {
+      padding: 40px 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .draft h2 {
+      font-size: 1.8rem; /* Adjust title size for mobile */
+    }
+  
+    .draft p {
+      font-size: 1rem; /* Adjust content size for mobile */
+    }
+  
+    .draft button {
+      width: 100%; /* Full-width buttons on smaller screens */
+      margin-top: 10px;
+      margin-right: 0; /* Remove right margin */
+    }
+  }
+  

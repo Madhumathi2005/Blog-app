@@ -1,0 +1,87 @@
+/* EditBlog.css */
+
+/* Container for the entire Edit Blog page */
+#edit-blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 150px auto 20px;  /* Increased margin-top to provide more space between navbar and content */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the Edit Blog page */
+#edit-blog-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form container styling */
+#edit-blog-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label for form inputs */
+.edit-blog-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Styling for input fields */
+.edit-blog-input,
+.edit-blog-textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* Custom styling for textarea */
+.edit-blog-textarea {
+  height: 200px;
+  resize: none;
+}
+
+/* Button styling */
+.edit-blog-btn {
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-blog-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsiveness for mobile devices */
+@media (max-width: 768px) {
+  #edit-blog-container {
+      padding: 20px;
+      width: 90%;
+  }
+
+  #edit-blog-title {
+      font-size: 1.6rem;
+  }
+
+  .edit-blog-btn {
+      width: 100%;
+  }
+}

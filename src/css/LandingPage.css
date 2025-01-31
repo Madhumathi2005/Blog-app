@@ -1,0 +1,160 @@
+/* LandingPage.css */
+
+/* General Styling */
+.landing-page {
+  background-color: #f5f5f5; /* Light background for light theme */
+  color: #333; /* Dark text for readability */
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 1s ease-in-out; /* Smooth background color transition */
+}
+
+/* Parallax-like background movement effect */
+.landing-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1506748686214-71f730404075'); /* Lighter background image */
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(5px); /* Add blur effect to background */
+  animation: parallax 15s infinite linear;
+}
+
+/* Parallax effect to simulate background movement */
+@keyframes parallax {
+  0% {
+    transform: scale(1.1) translateY(0);
+  }
+  50% {
+    transform: scale(1.1) translateY(20px);
+  }
+  100% {
+    transform: scale(1.1) translateY(0);
+  }
+}
+
+/* Flip animation for container */
+#landing-container {
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Lighter shadow for the light theme */
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent light background */
+  opacity: 0;
+  animation: flipIn 1.5s ease-out forwards; /* Flip-in animation */
+  transform: rotateY(90deg); /* Start flipped */
+}
+
+/* Flip-in animation for container */
+@keyframes flipIn {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+
+/* Title Animation with Slide and Fade */
+.landing-title {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  opacity: 0;
+  animation: slideInAndFade 1.5s ease-out 0.3s forwards; /* Slide-in and fade animation */
+  transform: translateY(-30px); /* Start from above */
+  letter-spacing: 2px; /* Slight spacing between letters */
+  text-transform: uppercase;
+  color: #333; /* Dark text for the title */
+}
+
+/* Slide-in and fade animation for title */
+@keyframes slideInAndFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Description Animation with Fade-in */
+.landing-description {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #555; /* Dark gray for the description */
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out 0.6s forwards; /* Fade-in animation */
+}
+
+/* Fade-in animation for description */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Button Animation with Zoom and Shadow */
+.landing-btn {
+  background-color: #3498db; /* Light blue button color */
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  animation: zoomInAndShadow 2s ease-out 1s forwards; /* Zoom and shadow animation */
+  transform: scale(0.9); /* Start small */
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3); /* Blue button shadow */
+}
+
+/* Zoom and shadow animation for button */
+@keyframes zoomInAndShadow {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+    box-shadow: 0 0 0 rgba(52, 152, 219, 0.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.5);
+  }
+}
+
+/* Background color fading animation */
+.landing-page {
+  animation: backgroundFade 5s infinite alternate; /* Fade in and out the background color */
+}
+
+/* Fading background color animation */
+@keyframes backgroundFade {
+  0% {
+    background-color: #f5f5f5; /* Lighter background color */
+  }
+  50% {
+    background-color: #e0e0e0; /* Slightly darker light background */
+  }
+  100% {
+    background-color: #f5f5f5;
+  }
+}

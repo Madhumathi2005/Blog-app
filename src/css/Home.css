@@ -1,0 +1,223 @@
+/* General Styling */
+.home-container {
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative; /* Ensures elements inside are properly positioned */
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('https://media.istockphoto.com/id/1395313484/vector/blog-on-grey-background-concept-logo-blog-with-letter-o-in-the-form-ring-light-or-rgb-circle.jpg?s=612x612&w=0&k=20&c=q6KgR6PIxjTWZiTctmewl_IdB9UyYd60CRiarTf2vwQ=') center/cover;
+  color: white;
+  padding: 120px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  font-weight: 400;
+  padding: 30px;
+}
+
+.hero-btn {
+  background-color: #ff4081;
+  color: white;
+  padding: 12px 45px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background-color: #e91e63;
+}
+
+/* Featured Blog */
+.featured-blog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.featured-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.featured-content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.featured-details {
+  text-align: left;
+  width: 60%;
+}
+
+.featured-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Button Styling for "Read More" */
+.read-more-btn {
+  background: linear-gradient(45deg, #ff4081, #e91e63);  /* Gradient background */
+  color: white;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;  /* Rounded corners for smooth edges */
+  border: 2px solid #ff4081;  /* Border color to match the gradient */
+  cursor: pointer;
+  transition: all 0.3s ease;  /* Smooth transition for hover effects */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Adding shadow for depth */
+}
+
+.read-more-btn:hover {
+  background: linear-gradient(45deg, #e91e63, #ff4081);  /* Reversed gradient on hover */
+  transform: translateY(-4px);  /* Lift the button slightly */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);  /* Deeper shadow on hover */
+}
+
+.read-more-btn:active {
+  transform: translateY(2px); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* Blog List */
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+  justify-items: center;
+}
+
+.blog-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.blog-excerpt {
+  font-size: 1rem;
+  color: #777;
+}
+
+.read-more-link {
+  color: #ff4081;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.read-more-link:hover {
+  color: #e91e63;
+}
+
+/* Loading & Error Messages */
+.loading-message, .error-message {
+  font-size: 1.2rem;
+  color: #ff4081;
+}
+
+/* No Blogs */
+.no-blogs {
+  font-size: 1.2rem;
+  color: #ff4081;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+      font-size: 2.2rem;
+  }
+
+  .hero-content p {
+      font-size: 1.3rem;
+  }
+
+  .featured-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .featured-image {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .blog-list {
+      grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  .blog-card {
+      width: 90%;
+  }
+
+  .hero-btn {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+  }
+}

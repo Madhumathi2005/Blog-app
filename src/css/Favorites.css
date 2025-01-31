@@ -1,0 +1,121 @@
+/* General Styling for the Favorites Page */
+.favorites-container {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  
+  /* Heading for the Favorites page */
+  .favorites-container h1 {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  /* Styling the list of favorite blogs */
+  .favorite-blogs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Styling for each individual favorite blog card */
+  .favorite-blog-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .favorite-blog-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  
+  .favorite-blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .favorite-blog-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .favorite-blog-card p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .favorite-read-more {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .favorite-read-more:hover {
+    background-color: #2980b9; /* Hover effect */
+  }
+  
+  /* Styling for when no favorites are available */
+  .no-favorites {
+    font-size: 1.2rem;
+    color: #ff4081;
+    margin-top: 20px;
+  }
+  .remove-favorite-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  .remove-favorite-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .favorites-container {
+      padding: 20px 10px;
+    }
+  
+    .favorites-container h1 {
+      font-size: 2rem;
+    }
+  
+    .favorite-blogs-list {
+      grid-template-columns: 1fr; /* Single column layout for mobile */
+    }
+  
+    .favorite-blog-card {
+      width: 100%;
+    }
+  
+    .favorite-read-more {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,110 @@
+/* Register Page CSS */
+
+/* General Page Styling */
+.register-container {
+    background-color: #121212; /* Dark background */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.5s ease; /* Smooth background transition */
+  }
+  
+  /* Title Styling */
+  .register-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #ff4081; /* Vibrant color for the title */
+    text-shadow: 0 0 5px rgba(255, 64, 129, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Form Container */
+  .register-form {
+    width: 100%;
+    max-width: 400px;
+    background: #1e1e1e; /* Dark background for form */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Soft shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Input Fields */
+  .register-input {
+    background-color: #333; /* Dark background for input fields */
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .register-input:focus {
+    border-color: #ff4081; /* Focus border color */
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.5); /* Focus glow effect */
+    outline: none; /* Remove default focus outline */
+  }
+  
+  /* Register Button */
+  .register-btn {
+    background-color: #ff4081; /* Vibrant button color */
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .register-btn:hover {
+    background-color: #e7346f; /* Slightly darker button color on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+  }
+  
+  /* Register Prompt */
+  .register-prompt {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #b0b0b0; /* Light grey for register text */
+  }
+  
+  /* Login Link Styling */
+  .login-link {
+    color: #ff4081; /* Vibrant color for login link */
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .login-link:hover {
+    color: #e7346f; /* Darker pink color when hovered */
+  }
+  
+  /* Subtle Form Animation */
+  .register-container {
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in effect for the entire page */
+  }
+  
+  /* Fade-in animation for the container */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,113 @@
+/* Create Blog Page Styling */
+
+/* General Page Container */
+.create-blog-container {
+    background-color: #fafafa; /* Light background for the page */
+    color: #333; /* Dark text for readability */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Title Styling */
+  .create-blog-title {
+    font-size: 2.5rem;
+    color: #8e24aa; /* Purple color for title */
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Form Container */
+  .create-blog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between form elements */
+    width: 100%;
+    max-width: 500px; /* Max width for the form */
+    background-color: #ffffff; /* White background for form */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  /* Input and Textarea Styling */
+  .create-blog-input, .create-blog-textarea {
+    padding: 12px;
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 5px; /* Rounded borders for inputs */
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .create-blog-input:focus, .create-blog-textarea:focus {
+    outline: none;
+    border-color: #8e24aa; /* Purple border when focused */
+  }
+  
+  /* Textarea Styling */
+  .create-blog-textarea {
+    min-height: 150px; /* Height for content input */
+    resize: vertical; /* Allow user to resize vertically */
+  }
+  
+  /* Button Styling */
+  .create-blog-btn {
+    background-color: #8e24aa; /* Purple background for the button */
+    color: white; /* White text on button */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-blog-btn:hover {
+    background-color: #6a1b9a; /* Darker purple on hover */
+  }
+  
+  /* Button Styling for Save as Draft */
+.save-draft-btn {
+  background-color: #f39c12; /* Orange background for the button */
+  color: white; /* White text on button */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px; /* Space between buttons */
+}
+
+.save-draft-btn:hover {
+  background-color: #e67e22; /* Darker orange on hover */
+  transform: translateY(-2px);  /* Slight lift effect */
+}
+
+.save-draft-btn:active {
+  transform: translateY(2px); /* Button pushed down effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
+}
+
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .create-blog-container {
+      padding: 40px 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .create-blog-title {
+      font-size: 2rem; /* Smaller title for mobile */
+    }
+  
+    .create-blog-form {
+      width: 100%;
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  }
+  

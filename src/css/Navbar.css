@@ -1,0 +1,85 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #8e24aa, #e91e63); /* Purple-to-pink gradient background */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 3px solid #ec407a; /* Adds a bottom border for contrast */
+  }
+  
+  /* Navbar Title */
+  .navbar-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ecf0f1;
+    font-family: 'Roboto Slab', serif; /* Elegant serif font for branding */
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  /* Navbar Links Container */
+  .navbar-links {
+    display: flex;
+    gap: 30px; /* Increased space between links */
+  }
+  
+  /* Navbar Link Styling */
+  .navbar-link {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover Effect - Background color change */
+  .navbar-link:hover {
+    color: #ffffff; /* White text on hover */
+    background-color: #ec407a; /* Pink background color on hover */
+    text-decoration: underline; /* Underline effect */
+    text-decoration-color: #fff; /* White underline */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Active Link Styling */
+  .navbar-link.active {
+    font-weight: 700; /* Bold the active link */
+    color: #ec407a; /* Active link color */
+    border-bottom: 2px solid #ec407a; /* Adds a bottom border to the active link */
+  }
+  
+  /* Mobile-Friendly */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 15px;
+      justify-content: center; /* Center the content on small screens */
+    }
+  
+    .navbar-links {
+      display: none; /* Hide the navbar links on mobile */
+    }
+  
+    .navbar.active .navbar-links {
+      display: flex;
+      flex-direction: column; /* Stack links vertically */
+      gap: 15px;
+    }
+  
+    .navbar-toggle {
+      display: block;
+      cursor: pointer;
+      font-size: 2rem;
+      color: white;
+    }
+  }
+  
