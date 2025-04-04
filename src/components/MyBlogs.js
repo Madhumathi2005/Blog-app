@@ -12,7 +12,7 @@ const MyBlogs = () => {
   useEffect(() => {
     // Fetch all blogs
     axios
-      .get("http://localhost:5000/api/blogs") // No userId needed
+      .get("mongodb+srv://user:userpassword@cluster0.wd0we.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/blogs") // No userId needed
       .then((res) => {
         console.log("Fetched blogs: ", res.data); // Debugging log
         setBlogs(res.data);
