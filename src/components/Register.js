@@ -17,7 +17,7 @@ const Register = () => {
     e.preventDefault(); // Prevent form from reloading the page
     try {
       // Sending registration data to the backend
-      const response = await axios.post("http://localhost:5000/api/auth/register", {
+      const response = await axios.post("mongodb+srv://user:userpassword@cluster0.wd0we.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
         username,
         email,
         password,
